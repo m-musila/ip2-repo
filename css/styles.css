@@ -6,9 +6,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     
 }
-hr {
-    color: rgb(65, 49, 49);
-    border: 2px dotted;
+div > hr {
+    margin-top: 0;
+    color: red;
+    width: 2rem;
 }
 /* ***************************** header styles ***************************** */
 .container-fluid {
@@ -170,3 +171,4 @@ hr {
     }
 
 }
+
