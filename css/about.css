@@ -1,0 +1,70 @@
+/* ***************************** profile styles ***************************** */
+body {
+    background-color: #071933;
+    color: white;
+    
+}
+
+h1 {
+    margin: 10rem 0;
+    margin-top:5rem;
+    font-size: 5rem;
+}
+h2 {
+    margin: 4rem 0;
+    color: lightblue;
+}
+
+img {
+    width: 500px;
+    height: 700px;
+    border-radius: 2%;
+    border: 0.1rem solid lightblue;
+}
+
+img:hover { 
+    opacity: 0.7;
+}
+h5 {
+    margin: 1rem 0;
+    font-size: 1rem;
+    padding-right: 2rem;
+    
+}
+h5 > span {
+    color: grey;
+}
+.profile {
+    display: grid;
+    /* gap: 1rem; */
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: 800px 800px;
+}
+
+.ingrid {
+    grid-column: 1/5;
+}
+
+.philip {
+    grid-column: 9/11;
+}
+
+.umma {
+    grid-column: 17/24;
+}
+
+.brian {
+    grid-column: 5/10;
+}
+.ryan {
+    grid-column: 13/16;
+}
+
+.bio {
+    margin: 5rem 14rem;
+}
+
+/* form */
+.form {
+    margin: 5rem 20rem;
+}
