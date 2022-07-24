@@ -6,14 +6,27 @@ body {
     font-family: 'Montserrat', sans-serif;
     
 }
+
+h1 {
+    color: #d9534f;
+}
+
 div > hr {
     margin-top: 0;
     color: red;
     width: 2rem;
+    padding: 0.1rem;
+}
+.hr-profile {
+    width: 100%;
 }
 /* ***************************** header styles ***************************** */
+.nav-item > a:hover {
+    border-bottom: 3px solid #d9534f;
+}
+
 .container-fluid {
-    padding: 0.5rem 2rem 0.5rem;
+    padding: 2rem 2rem ;
 }
 .container-fluid > div > ul > li {
     padding-right: 5rem;
@@ -61,7 +74,7 @@ div > hr {
 /* call to action */
 .call-to-action {
     text-align: center;
-    color:black;
+    color: black;
     background-color: rgb(149, 210, 231);
     margin: 5rem 0;
     padding: 5rem 0;
@@ -171,4 +184,7 @@ div > hr {
     }
 
 }
+
+
+
 

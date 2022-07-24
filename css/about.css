@@ -1,19 +1,19 @@
 /* ***************************** profile styles ***************************** */
 body {
-    background-color: #071933;
-    color: white;
+    /* background-color: #071933; */
+    color: black;
     
 }
 
 hr {
     margin-top: 0;
-    color: red;
     width: 2rem;
+    padding: 0.1rem;
 }
 
 h1 {
-    margin: 10rem 0;
-    margin-top:5rem;
+    color: lightblue; 
+    margin: 6rem 0;
     font-size: 5rem;
 }
 h2 {
@@ -21,18 +21,25 @@ h2 {
     margin-bottom: 0;
     font-weight: bold;
     font-size: 2.5rem;
-    color: lightblue;
+  
+    
 }
 
+ hr, h2, h3 {
+    color: #d9534f;
+ }
 img {
+    transition: transform .3s; /* Animation */
     width: 500px;
     height: 700px;
     border-radius: 2%;
-    border: 0.1rem solid lightblue;
+    border: 0.2rem solid lightblue;
 }
 
 img:hover { 
-    opacity: 0.3;
+
+    transform: scale(1.03); /* 103% zoom */
+    border: 0.5rem solid #d9534f;
     cursor: pointer;
 }
 h5 {
