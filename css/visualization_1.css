@@ -1,0 +1,160 @@
+/* ***************************** global styles ***************************** */
+html {
+    font-size: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+div > hr {
+    margin-top: 0;
+    color: red;
+    width: 2rem;
+}
+/* ***************************** header styles ***************************** */
+.container-fluid {
+    padding: 0.5rem 2rem 0.5rem;
+}
+.container-fluid > div > ul > li {
+    padding-right: 5rem;
+}
+.navbar-brand {
+    margin-left: 5.5rem;
+}
+/* ***************************** body styles ***************************** */
+
+h2 {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+.chartBox {
+    width: 80%;
+    padding: 20px;
+    border: none;
+    background: white;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.line {
+    width: 15%;
+    height: 5%;
+    border-bottom: 2px solid black;
+    position: absolute;
+    margin-left: 10%;
+}
+
+#btn {
+    background-color:black;
+    color: white;
+    border: none;
+    position:absolute;
+    left: 75%;
+    bottom: -50%;
+    padding: 1rem;
+}
+
+/* ***************************** footer styles ***************************** */
+
+ .footer {
+    position: relative;
+    margin-top: auto;
+    background-color:black;
+    padding: 2rem 0;
+    color:hsl(0, 0%, 100%);
+    
+ }
+
+.more-links {
+    display: flex;
+    justify-content: center;
+
+ }
+
+ .footer  a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    margin: 1rem; 
+    
+ }
+
+/* media */
+
+.media {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-twitter, .fa-linkedin, .fa-youtube, .fa-instagram, .fa-skype, .fa-reddit {
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    text-align: center; 
+    border-radius: 50%;
+}
+
+.fa-twitter {
+  background: hsl(206, 82%, 63%);
+ 
+}
+
+.fa-linkedin {
+  background: hsl(199, 100%, 35%);
+ 
+}
+
+.fa-youtube {
+  background: hsl(0, 100%, 37%);
+ 
+}
+
+.fa-instagram {
+  background: hsl(205, 77%, 30%);
+  
+}
+
+.fa-skype {
+  background: hsl(196, 100%, 47%);
+  
+}
+
+.fa-reddit {
+  background: hsl(20, 100%, 50%);
+  
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+
+
+.copyright {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* ***************************** tablet-view styles ***************************** */
+@media screen and (max-width: 990px) {
+    #btn {
+        position: absolute;
+        bottom: -5%;
+    }
+}
+
+/* ***************************** mobile-view styles ***************************** */
+@media screen and (max-width: 500px) {
+    .chartBox {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    #btn {
+        position: absolute;
+        bottom: 20%;
+        margin-right: 5%;
+    }
+}
