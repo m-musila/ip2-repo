@@ -91,6 +91,10 @@ h2 {
     border-radius: 10px 10px 10px 10px;
 }
 
+#rect3 a {
+    margin-left: 5%;
+}
+
 #rect1 p, #rect2 p, #rect3 p {
     margin-left: 5%;
     margin-right: 5%;
@@ -185,6 +189,8 @@ h2 {
 
     #rect2 {
         margin-top: 40%;
+        width: 55%;
+        height: 60%;
     }
 
     #right {
@@ -192,8 +198,19 @@ h2 {
     }
 
     #source {
-        margin-top: 40%;
+        margin-top: 60%;
     }
+
+    #rect3 {
+        width: 85%;
+        height: 80%;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: -210%;
+    }
+    
 }
 
 /* ***************************** mobile-view styles ***************************** */
@@ -211,18 +228,25 @@ h2 {
     #rect2 {
         margin-top: 100%;
         width: 50%;
+        height: 110%;
     }
 
     #right {
-        margin-top: 110%;
+        margin-top: 130%;
         margin-left: 65%;
     }
 
     #source {
-        margin-top: 100%;
+        margin-top: 140%;
     }
 
     #rect3 {
         width: 100%;
+        height: 120%;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: -260%;
     }
 }
