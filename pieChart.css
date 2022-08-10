@@ -1,0 +1,27 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  svg {
+    display: flex;
+    margin: 2rem auto;
+    width: 1000px;
+    height: 500px;
+  }
+  
+  path.slice{
+      stroke-width:2px;
+  }
+  
+  polyline{
+      opacity: .3;
+      stroke: black;
+      stroke-width: 2px;
+      fill: none;
+  }
+
+  .update-btn {
+    display: flex;
+    cursor: pointer;
+    margin: 2rem auto;
+  }
