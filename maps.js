@@ -48,13 +48,13 @@ Promise.all([
       .append('path') 
       .attr('d', d => mapPathGenerator(d))
 
-      .style("fill", (d) => {
-        if(d > 3) {
-            return "black";
-        }else {
-            return "pink";
-        }
-    })
+    //   .style("fill", (d) => {
+    //     if(d > 3) {
+    //         return "black";
+    //     }else {
+    //         return "pink";
+    //     }
+    // })
     //tooltip 
       .append('title')
       .text(d => countryName[d.id] + " " + countryCount[1].count);

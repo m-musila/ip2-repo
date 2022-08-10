@@ -1,7 +1,7 @@
 /* countries */
 path {
     stroke: black;
-    /* fill:#d9534f; */
+    fill:#d9534f;
 }
 path:hover {
     fill: green;
