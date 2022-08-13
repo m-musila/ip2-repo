@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- icon library for media -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- installing d3.js script -->
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
     <!-- css files -->
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/visualization_1.css">
@@ -59,66 +62,73 @@
     
 
     <!-- end of header -->
-    <!-- chart 1 -->
-    <h2>Area Chart</h2>
-    <div class="line"></div><br/><br/><br/>
-    <select id ="countries" onchange="showCharts()">
-        <option value="Kenya">Kenya</option>
-        <option value="Rwanda">Rwanda</option>
-        <option value="Nigeria">Nigeria</option>
-        <option value="Zimbabwe">Zimbabwe</option>
-    </select>
-    <div class="chartBox">
-        <div id="Kenya">
-            <canvas id="myChart" width="60%" height="30%"></canvas><br/>
-            <p>Check the GDP for the desired year ranges (within 2000 and 2021) by specifying the start and end years below.</p>
-            <label for = "startYear">Start year: </label>
-            <input type="number" id="startYear" min="2000" max="2021" value="2000" onchange="filterData()"><br/><br/>
-            <label for = "endYear">End year: </label>
-            <input type="number" id="endYear" min="2000" max="2021" value="2021" onchange="filterData()">
+    <section class="body-section">
+        <!-- chart 1 -->
+        <h2>Area Chart</h2>
+        <hr>
+        <!-- <div class="line"></div><br/><br/><br/> -->
+        <select id ="countries" onchange="showCharts()">
+            <option value="Kenya">Kenya</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Zimbabwe">Zimbabwe</option>
+        </select>
+        <div class="chartBox">
+            <div id="Kenya">
+                <canvas id="myChart" width="60%" height="30%"></canvas><br/>
+                <p>Check the GDP for the desired year ranges (within 2000 and 2021) by specifying the start and end years below.</p>
+                <label for = "startYear">Start year: </label>
+                <input type="number" id="startYear" min="2000" max="2021" value="2000" onchange="filterData()"><br/><br/>
+                <label for = "endYear">End year: </label>
+                <input type="number" id="endYear" min="2000" max="2021" value="2021" onchange="filterData()">
+            </div>
+            <div id="Rwanda" style="display:none">
+                <canvas id="myChart1" width="60%" height="30%"></canvas><br/>
+                <p>Check the GDP for the desired year ranges (within 2000 and 2021) by specifying the start and end years below.</p>
+                <label for = "startYear">Start year: </label>
+                <input type="number" id="startYear1" min="2000" max="2021" value="2000" onchange="filterData1()"><br/><br/>
+                <label for = "endYear">End year: </label>
+                <input type="number" id="endYear1" min="2000" max="2021" value="2021" onchange="filterData1()">
+            </div>
+            <div id="Nigeria" style="display:none">
+                <canvas id="myChart2" width="60%" height="30%"></canvas><br/>
+                <p>Check the GDP for the desired year ranges (within 2000 and 2021) by specifying the start and end years below.</p>
+                <label for = "startYear">Start year: </label>
+                <input type="number" id="startYear2" min="2000" max="2021" value="2000" onchange="filterData2()"><br/><br/>
+                <label for = "endYear">End year: </label>
+                <input type="number" id="endYear2" min="2000" max="2021" value="2021" onchange="filterData2()">
+            </div>
+            <div id="Zimbabwe" style="display:none">
+                <canvas id="myChart3" width="60%" height="30%"></canvas><br/>
+                <p>Check the GDP for the desired year ranges (within 2000 and 2021) by specifying the start and end years below.</p>
+                <label for = "startYear">Start year: </label>
+                <input type="number" id="startYear3" min="2000" max="2021" value="2000" onchange="filterData3()"><br/><br/>
+                <label for = "endYear">End year: </label>
+                <input type="number" id="endYear3" min="2000" max="2021" value="2021" onchange="filterData3()">
+            </div>
         </div>
-        <div id="Rwanda" style="display:none">
-            <canvas id="myChart1" width="60%" height="30%"></canvas><br/>
-            <p>Check the GDP for the desired year ranges (within 2000 and 2021) by specifying the start and end years below.</p>
-            <label for = "startYear">Start year: </label>
-            <input type="number" id="startYear1" min="2000" max="2021" value="2000" onchange="filterData1()"><br/><br/>
-            <label for = "endYear">End year: </label>
-            <input type="number" id="endYear1" min="2000" max="2021" value="2021" onchange="filterData1()">
-        </div>
-        <div id="Nigeria" style="display:none">
-            <canvas id="myChart2" width="60%" height="30%"></canvas><br/>
-            <p>Check the GDP for the desired year ranges (within 2000 and 2021) by specifying the start and end years below.</p>
-            <label for = "startYear">Start year: </label>
-            <input type="number" id="startYear2" min="2000" max="2021" value="2000" onchange="filterData2()"><br/><br/>
-            <label for = "endYear">End year: </label>
-            <input type="number" id="endYear2" min="2000" max="2021" value="2021" onchange="filterData2()">
-        </div>
-        <div id="Zimbabwe" style="display:none">
-            <canvas id="myChart3" width="60%" height="30%"></canvas><br/>
-            <p>Check the GDP for the desired year ranges (within 2000 and 2021) by specifying the start and end years below.</p>
-            <label for = "startYear">Start year: </label>
-            <input type="number" id="startYear3" min="2000" max="2021" value="2000" onchange="filterData3()"><br/><br/>
-            <label for = "endYear">End year: </label>
-            <input type="number" id="endYear3" min="2000" max="2021" value="2021" onchange="filterData3()">
-        </div>
-    </div>
-    <h2>Chart description</h2>
-    <p style="margin-top: 1%; margin-left: 10%; margin-right: 40%; margin-bottom: 10%;">The chart above shows the GDP (Gross Domestic Product) of four countries (Kenya, Rwanda, Nigerian and Zimbabwe) from 2000 to 2021.
-     One can also filter the data to showcase specific year ranges within the 2000 to 2021 period.
-    For more information on the data used for the chart and how the chart and its interactivity was implemented, click on the 'Learn More' button.</p>
-    
+        <h2>Chart description</h2>
+        <p style="margin-top: 1%; margin-left: 10%; margin-right: 40%; margin-bottom: 10%;">The chart above shows the GDP (Gross Domestic Product) of four countries (Kenya, Rwanda, Nigerian and Zimbabwe) from 2000 to 2021.
+        One can also filter the data to showcase specific year ranges within the 2000 to 2021 period.
+        For more information on the data used for the chart and how the chart and its interactivity was implemented, click on the 'Learn More' button.</p>
+        
 
-    <!-- chart 2 -->
-    <h2>Pie Chart</h2>
-    <div class="line"></div><br/><br/><br/>
-	<svg id="chart-svg"></svg>
-    <button class="update-btn btn btn-outline-danger btn-lg" type="button">Update</button>
-    <h2>Chart description</h2>
-    <p style="margin-top: 1%; margin-left: 10%; margin-right: 40%; margin-bottom: 10%;">The chart above shows the GDP (Gross Domestic Product) of four countries (Kenya, Rwanda, Nigerian and Zimbabwe) from 2000 to 2021.
-     One can also filter the data to showcase specific year ranges within the 2000 to 2021 period.
-    For more information on the data used for the chart and how the chart and its interactivity was implemented, click on the 'Learn More' button.</p>
-    
-    <button id="btn" class="btn btn-danger btn-lg">Learn more</button>
+        <!-- chart 2 -->
+        <h2>Pie Chart</h2>
+        <hr>
+        <!-- <div class="line"></div><br/><br/><br/> -->
+        <svg id="chart-svg"></svg>
+        <button class="update-btn btn btn-outline-danger btn-lg" type="button">Update</button>
+        <h2>Chart description</h2>
+        <p style="margin-top: 1%; margin-left: 10%; margin-right: 40%; margin-bottom: 10%;">The chart above shows the GDP (Gross Domestic Product) of four countries (Kenya, Rwanda, Nigerian and Zimbabwe) from 2000 to 2021.
+        One can also filter the data to showcase specific year ranges within the 2000 to 2021 period.
+        For more information on the data used for the chart and how the chart and its interactivity was implemented, click on the 'Learn More' button.</p>
+        
+        <br>
+        <br>
+        <br>
+        <button id="btn" class="btn btn-danger btn-lg">Learn more</button>
+</section>
     <!-- start of body -->
     
     

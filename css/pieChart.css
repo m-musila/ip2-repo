@@ -4,9 +4,11 @@
   
   svg {
     display: flex;
-    margin: 2rem auto;
+    margin: 4rem auto;
     width: 1000px;
-    height: 500px;
+    height: 600px;
+    padding-top: 4rem;
+    
   }
   
   path.slice{
