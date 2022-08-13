@@ -15,8 +15,8 @@
     <!-- icon library for media -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- css files -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/data.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/about.css">
   </head>
   <body>
     
@@ -38,7 +38,7 @@
                         <!-- nav links -->
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item ">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="/index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="visulazation.html">Visualization</a>
@@ -61,41 +61,61 @@
 
     <!-- start of body -->
     <section class="body-section">
-        <h1>API and Data</h1>
+        <h2>Meet The Team</h2>
+        <hr>
+        <h1>We believe in investing in people and building meaningful bonds</h1>
+<hr class="hr-profile">
 
-        <!-- carousel -->
-        <div class="slide-show-wrapper">
-            <div class="slide fade">
-                <img src="images/background.webp" alt="API 1">
-                <h5>Slide One</h5>
-                <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio quia sed harum alias.</div>
+        <div class="profile">
+            <div class="ingrid">
+                <img src="/images/woman.jpg" alt="">
+                <h5>Ingrid <span>Director, Designer</span></h5>
             </div>
-            <div class="slide fade">
-                <img src="images/background.webp" alt="API 2">
-                <h5>Slide Two</h5>
-                <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio quia sed harum alias.</div>
+            <div class="philip">
+                <img src="/images/man.jpg" alt="">
+                <h5>Philip <span> Director, Designer</span></h5>
             </div>
-            <div class="slide fade">
-                <img src="images/background.webp" alt="API 3">
-                <h5>Slide Three</h5>
-                <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio quia sed harum alias.</div>
+            <div class="umma">
+                <img src="/images/woman.jpg" alt="">
+                <h5>Ummah <span>Director, Designer</span></h5>
             </div>
-            <!-- slide navigation -->
-            <a class="prev" onclick="addSlides(-1)">❮</a>
-            <a class="next" onclick="addSlides(1)">❯</a>
+            <div class="brian">
+                <img src="/images/man.jpg" alt="">
+                <h5>Brian <span>Director, Designer</span></h5>
+            </div>
+            <div class="ryan">
+                <img src="/images/man.jpg" alt="">
+                <h5>Ryan <span>Director, Designer</span></h5>
+            </div>
+
         </div>
-
-        <br>
-
-        <div style="text-align: center;">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+        <div class="bio">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, voluptatem quam, eius dolorum voluptas soluta delectus a voluptatum consequatur harum repellendus. Dignissimos labore deserunt officia, autem sit molestiae laborum cum.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, voluptatem quam, eius dolorum voluptas soluta delectus a voluptatum consequatur harum repellendus. Dignissimos labore deserunt officia, autem sit molestiae laborum cum.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, voluptatem quam, eius dolorum voluptas soluta delectus a voluptatum consequatur harum repellendus. Dignissimos labore deserunt officia, autem sit molestiae laborum cum.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, voluptatem quam, eius dolorum voluptas soluta delectus a voluptatum consequatur harum repellendus. Dignissimos labore deserunt officia, autem sit molestiae laborum cum.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, voluptatem quam, eius dolorum voluptas soluta delectus a voluptatum consequatur harum repellendus. Dignissimos labore deserunt officia, autem sit molestiae laborum cum.</p>
         </div>
+        <hr class="hr-profile">
+        
+        <h3>We’re here for you, help us help you</h3>
+        <hr>
 
-        <br>
-
+        <div class="form">
+            <form>
+                <div >
+                  <label >Email address</label>
+                  <input type="email" class="form-control"  placeholder="name@example.com">
+                </div>
+                <div >
+                  <label >Message</label>
+                  <textarea class="form-control" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger btn-lg">Submit</button>
+              </form>
+        </div>
     </section>
+    
     
     <!-- End of  body -->
 
@@ -124,7 +144,5 @@
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <script src="data.js"></script>
   </body>
 </html>

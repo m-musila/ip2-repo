@@ -130,7 +130,7 @@ function update(data) {
 	function middleAngle(d){
 		return d.startAngle + (d.endAngle - d.startAngle)/2;
 	}
-// logical source D3.j Graph Gallery -https://d3-graph-gallery.com/pie.html
+// logic source D3.j Graph Gallery -https://d3-graph-gallery.com/pie.html
 	text.transition().duration(1000)
 		.attrTween("transform", (d) => {
 			this._current = this._current || d;
@@ -163,7 +163,7 @@ function update(data) {
 	
 	polyline.enter()
 		.append("polyline");
-    // logical source D3.j Graph Gallery -https://d3-graph-gallery.com/pie.html
+    // logic source D3.j Graph Gallery -https://d3-graph-gallery.com/pie.html
 	polyline.transition().duration(1000)
 		.attrTween("points", (d) => {
 			this._current = this._current || d;
