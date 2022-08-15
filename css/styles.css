@@ -64,6 +64,19 @@ div > hr {
     width: 70%;
 
 }
+.chart {
+    margin: 4rem;
+}
+
+.chart > a {
+    margin-left: 1rem;
+    text-decoration: none;
+    border: 1px solid #d9534f;
+    padding: 1rem;
+    color: white;
+    background-color: #d9534f;
+}
+
 /* introduction */
 .intro {
     display: flex;

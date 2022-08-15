@@ -5,6 +5,10 @@ img {
     height: 700px;
 }
 
+h1 {
+    margin: 3rem 0;
+}
+
 h5 {
     margin-bottom: 1.5rem;
 }
@@ -16,9 +20,23 @@ h5, .text {
     padding: 0.25rem 0.75rem;
     bottom: 0.7rem;
 }
-
+hr {
+    color: #d9534f;
+}
 /* special styles*/
 
+.data {
+    margin: 4rem;
+}
+
+.data > a {
+    margin-left: 1rem;
+    text-decoration: none;
+    border: 1px solid #d9534f;
+    padding: 1rem;
+    color: white;
+    background-color: #d9534f;
+}
 .slide-show-wrapper {
     position: relative;
     margin: auto;
@@ -75,6 +93,11 @@ h5, .text {
 
 .active, .dot:hover {
     background-color: #d9534f;
+}
+
+footer {
+    margin-top: 3rem;
+    padding: 5rem;
 }
 
 @keyframes fade {
