@@ -1,0 +1,59 @@
+ img {
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+ }
+ li, a {
+    
+    text-decoration: none;
+  }
+  #feedback-storage> li  {
+    list-style-type: none;
+  }
+  
+  .input {
+    margin: 4rem auto;
+    max-width: 1000px;
+    padding: 1rem;
+  }
+  
+  input, textarea {
+    border: 1px solid #d9534f;
+    outline: none;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  #feedback {
+    width: 100%;
+  }
+  
+  #name, #email {
+    margin-bottom: 1rem;
+    width: 48.8%;
+    
+  }
+  
+  #name {
+    margin-right: 1rem;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  
+  #feedback-storage{
+    margin: 2rem 0;
+  }
+  
+  #feedback-storage li {
+    border-bottom: 1px solid rgb(226, 219, 219);
+    padding: 1rem 0;
+  }
+  
+  #feedback-storage li span {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }

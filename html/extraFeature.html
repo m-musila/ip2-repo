@@ -15,7 +15,9 @@
     <!-- icon library for media -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- css files -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/extraFeature.css">
   </head>
   <body>
     
@@ -37,19 +39,19 @@
                         <!-- nav links -->
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item ">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="/index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="html/visulazation.html">Visualization</a>
+                                <a class="nav-link" href="visulazation.html">Visualization</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="html/data.html">Data</a>
+                                <a class="nav-link" href="data.html">Data</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="html/extraFeature.html">Extra-feature</a>
+                                <a class="nav-link" href="extraFeature.html">Extra-feature</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="html/about.html">Author</a>
+                                <a class="nav-link" href="about.html">Author</a>
                             </li>
                         </ul>
                     </div>  
@@ -61,43 +63,58 @@
 
     <!-- end of header -->
 
-    <!-- start of body -->
-    <section class="body-section">
-        
-        <!-- landing-img -->
-         <div class="landing-img">
-             <img src="images/background.webp" alt="">
-             <div class="landing-text">
-                <h1>Data Visualization</h1>
-                <hr>
-                <p>Data visualizations is the practice of translating information into a visual context, such as a map or graph, to make data easier for the human brain to understand and extract insights from.</p>
-                <p>The primary goal of data visualization is to make identifying patterns, trends, and outliers in large data sets easier.</p>
-             </div>
-         </div>
-
-         <!-- <hr class="hr-profile"> -->
-
-         <div class="intro">
-            <img src="images/data_viz_basics-main.jpg" alt="">
-            <div class="bio">
-                <h1>Data Description</h1>
-                <hr>
-                <p>The data used mainly revolves around GDP values, currency values and air quality for certain countries. </p>
-            </div>
-         </div>
-         <!-- <hr class="hr-profile"> -->
-         
-         <!-- call to action -->
-         <div class="call-to-action">
-             <h2>Add call to action here</h2>
-             <button type="button" class="btn btn-danger btn-lg"> Visualizations</button>
-             <button type="button" class="btn btn-outline-danger btn-lg"> Extra-feature</button>
-         </div> 
-         
-    </section>
+   <!-- start of body-->
     
+   <section class="body-section">
+    <h2>Resource Page / Extra-feature</h2>
+    <hr>
+    <h1>Important resources that one might need while working on data visulazation.</h1>
+    
+    <h4>API Resources</h4>
+    <p>Application Programming Interface. <a href="https://aws.amazon.com/what-is/api/">What is an API?</a></p>
+    <h5>Example - API Marketplace</h5>
+    <ul>
+        <li><a href="https://apilayer.com">Hassle-free </a> </li>
+        <li><a href="https://rapidapi.com/collection/list-of-free-apis">RapidAPI</a></li>
+        <li><a href="https://any-api.com">Any⚡️API</a></li>
+    </ul>
+    <br>
+    <br>
+    <h4>Web Technology Resources</h4>
+    <p>Tools for developing visulazations that work well with html, css and javaScript.</p>
+    <h5>Example - Libraries / Frameworks</h5>
+    <ul>
+        <li><a href="https://d3js.org">D3.js - Data-Driven Documents </a> </li>
+        <li><a href="https://www.chartjs.org/docs/latest/">Chart.js</a></li>
+        <li><a href="https://openlayers.org/en/latest/examples/topojson.html">ATopoJSON</a></li>
+    </ul>
+    <br>
+    <br>
+    <h4>Visualization Resources</h4>
+    <p>The best visulazation will depend on the kind of data. Some data might work for a line graph but not a bar chart</p>
+    <h5>Example - Visualizations </h5>
+    <ul>
+        <li><a href="https://d3-graph-gallery.com/backgroundmap">Dynamic maps </a> </li>
+        <li><a href="https://www.chartjs.org/docs/latest/charts/doughnut.html">Pie chart</a></li>
+        <li><a href="https://www.w3schools.com/ai/ai_chartjs.asp">Line, Bar, Area charts .....</a></li>
+    </ul>
+    <h2>We’re here for you, help us help you</h2>
+    <hr>
+    <form>
+        <div class="input">
+            <div class="email-name">
+                <input required type="text" id="name" placeholder="Enter your name">
+                <input required type="email" id="email" placeholder="Email@example.com">
+            </div>
+            <textarea required placeholder="Enter your feedback here" id="feedback" cols="32" rows="12"></textarea>
+            <button class="btn btn-danger btn-lg" id="button" type="submit" onclick="getFeedback();">Post feedback</button>
+    </form>
+    <ul id="feedback-storage">
+    </ul>
+</div>
+</section>
     <!-- End of  body -->
-    <!-- <hr> -->
+
     <!-- start of footer -->
     <section class="footer-section">
         <footer class="footer">
@@ -123,5 +140,7 @@
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="/js/extraFeature.js"></script>
   </body>
 </html>
