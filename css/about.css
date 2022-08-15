@@ -28,7 +28,7 @@ h2 {
  hr, h2, h3 {
     color: #d9534f;
  }
-img {
+div > div> img {
     transition: transform .3s; /* Animation */
     width: 500px;
     height: 700px;
@@ -36,7 +36,7 @@ img {
     border: 0.2rem solid lightblue;
 }
 
-img:hover { 
+div > div> img:hover { 
 
     transform: scale(1.03); /* 103% zoom */
     border: 0.5rem solid #d9534f;

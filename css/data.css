@@ -16,7 +16,9 @@ h5, .text {
     padding: 0.25rem 0.75rem;
     bottom: 0.7rem;
 }
+
 /* special styles*/
+
 .slide-show-wrapper {
     position: relative;
     margin: auto;

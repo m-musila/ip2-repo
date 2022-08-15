@@ -34,6 +34,13 @@ div > hr {
 .navbar-brand {
     margin-left: 5.5rem;
 }
+
+.logo {
+    margin-left: 5.7rem;
+    width: 7rem;
+    height: 7rem;
+    cursor: grab;
+}
 /* ***************************** body styles ***************************** */
 
 
