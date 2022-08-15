@@ -72,19 +72,15 @@
         <!-- carousel -->
         <div class="slide-show-wrapper">
             <div class="slide fade">
-                <img src="/images/background.webp" alt="API 1">
-                <h5>Slide One</h5>
-                <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio quia sed harum alias.</div>
+                <img src="/images/api-pie1.png" alt="API 1">
+                
             </div>
             <div class="slide fade">
-                <img src="/images/background.webp" alt="API 2">
-                <h5>Slide Two</h5>
-                <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio quia sed harum alias.</div>
+                <img src="/images/api-pie2.png" alt="API 2">
+               
             </div>
             <div class="slide fade">
-                <img src="/images/background.webp" alt="API 3">
-                <h5>Slide Three</h5>
-                <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio quia sed harum alias.</div>
+                <img src="/images/api-pie3.png" alt="API 3">
             </div>
             <!-- slide navigation -->
             <a class="prev" onclick="addSlides(-1)">❮</a>
@@ -116,28 +112,17 @@
             The data structure from the source is shown in form of json, with each object showcasing the above contents.</p>
         </div>
         <div id="rect2">
-            <p>The chart was implemented through the use of a javascript library called 'Chart.js'
-               For the library to work, it requires extracting the required data for the x and y axis (year value and GDP value respectively).
-               In addition, it also requires to specify the type of chart to be created, labels for the chart, chart colors and, optional, if the chart should begin at zero.
-               This forms the chart configuration, which is used to create a chart from the specified canvas element in the html file.
-               A method was also created to filter data based on the selected year ranges. 
-               The method involves extracting the x-axis values, getting the selected start and end years from the user's input, get the years only within the specified
-               start and end years and then show the data in which the x-axis values is wihtin the range.</p>
+            <p>The chart was implemented through the use of a javascript library called 'd3.js'
+                Using the library CDN we were able to implement the pie chart using d3 methods.
+               In addition, to specify the type of chart to be created, labels for the chart are defined. The chart uses the svg element to display the chart on the browser.
+               
+               An update button is added to allow for changes from the api json data. The country name and air quality in PM2.5 count are the files used to generate the pie chart</p>
         </div>
         <div id="right">
             <h3>CODE EXECUTION</h3>
             <div class="line2"></div>
         </div>
-        <div id="source">
-            <h3 style="margin-left: 30%;">API SOURCE</h3>
-            <div id="rect3">
-                <p>The below links are the API links used for the created charts.</p>
-                <a>http://api.worldbank.org/v2/country/ke/indicator/NY.GDP.MKTP.CD?date=2000:2021&format=json</a>
-                <a>http://api.worldbank.org/v2/country/rw/indicator/NY.GDP.MKTP.CD?date=2000:2021&format=json</a>
-                <a>http://api.worldbank.org/v2/country/ng/indicator/NY.GDP.MKTP.CD?date=2000:2021&format=json</a>
-                <a>http://api.worldbank.org/v2/country/zw/indicator/NY.GDP.MKTP.CD?date=2000:2021&format=json</a>
-            </div>
-        </div>
+        
 
     </section>
     

@@ -77,12 +77,15 @@ const color = d3.scale.ordinal()
 	.domain(countryName)
 	.range(["hsl(215, 28%, 68%)", "hsl(242, 14%, 59%)", "hsl(276, 13%, 47%)", "hsl(300, 20%, 35%)"]);
 
+
+
 function countryData(){
 	let labels = color.domain();
 	return labels.map((label) => {
 		return { label: label, value: Math.random(countryCount[2]) }
 	});
 }
+
 
 update(countryData());
 
@@ -181,4 +184,13 @@ function update(data) {
 		.remove();
 
     };
+
+	
+
+svg.append("circle").attr("cx",300).attr("cy",220).attr("r", 6).style("fill", "#404080")
+svg.append("text").attr("x", 310).attr("y", 220).text("Fine particulate matter").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 310).attr("y", 240).text(" - (PM2.5)").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 310).attr("y", 260).text("slice is proportional to air").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 310).attr("y", 280).text("of poor air quality").style("font-size", "15px").attr("alignment-baseline","middle")
+
 } getCountryData();
