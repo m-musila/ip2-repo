@@ -1,5 +1,5 @@
 const xmlhttp = new XMLHttpRequest();
-const url = 'http://api.worldbank.org/v2/country/ke/indicator/NY.GDP.MKTP.CD?date=2000:2021&format=json';
+const url = 'https://api.worldbank.org/v2/country/ke/indicator/NY.GDP.MKTP.CD?date=2000:2021&format=json';
 xmlhttp.open('GET', url, true);
 xmlhttp.send();
 // The second part takes the expected data for the x and y-axis if the connection to the data is successful.

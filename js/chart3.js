@@ -1,5 +1,5 @@
 const xmlhttp2 = new XMLHttpRequest();
-const url2 = 'http://api.worldbank.org/v2/country/ng/indicator/NY.GDP.MKTP.CD?date=2000:2021&format=json';
+const url = 'https://api.worldbank.org/v2/country/ke/indicator/NY.GDP.MKTP.CD?date=2000:2021&format=json';
 xmlhttp2.open('GET', url2, true);
 xmlhttp2.send();
 var Labels2 = [];
