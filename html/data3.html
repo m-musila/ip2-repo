@@ -111,34 +111,23 @@
             <div class="line1"></div>
         </div>
         <div id="rect1">
-            <p>The data which was used to create the chart shows the GDP value for the selected country, according to the World Bank's World Development Indicators.
-            The content of the data source shows the indicator name (GDP), country name, year value and GDP value.
-            The data structure from the source is shown in form of json, with each object showcasing the above contents.</p>
+            <p>
+                The data for the line chart was extracted from an API by Crypto gecko which is a site that has all the up to date information on all the popular Cryptocurrencies. The site provides all kinds of information regarding cryptocurrencies including news and also in different currencies.
+    
+                The data is stored in arrays of 2 with date and value for every cryptocurrency. There are other dimensions to it but for this chart it has been filtered to fit that. It shows the cryptocurrency name and its value in us dollars at any given time in the past. This is then used to plot the graph showing how the data has been changing in the past compared to its value now.
+                </p>
         </div>
         <div id="rect2">
-            <p>The chart was implemented through the use of a javascript library called 'Chart.js'
-               For the library to work, it requires extracting the required data for the x and y axis (year value and GDP value respectively).
-               In addition, it also requires to specify the type of chart to be created, labels for the chart, chart colors and, optional, if the chart should begin at zero.
-               This forms the chart configuration, which is used to create a chart from the specified canvas element in the html file.
-               A method was also created to filter data based on the selected year ranges. 
-               The method involves extracting the x-axis values, getting the selected start and end years from the user's input, get the years only within the specified
-               start and end years and then show the data in which the x-axis values is wihtin the range.</p>
+            <p>For this particular graph the API used focused on bitcoin in the US dollar. The data was made into a historical chart that shows the different changes of value of bitcoin over time. The three main time periods focused on were 24 hours, one week and one month. The daily graph shows changes every hour for the past 24 hours, the weekly graph shows the changes every day for a week and the monthly graph shows the changes every day for the last 30 days.
+
+            The structure of the chart was defined with HTML and created using Chart.Js then designed with CSS. Chart.Js uses graph templates which makes it easier and faster to implement.
+                </p>
         </div>
         <div id="right">
             <h3>CODE EXECUTION</h3>
             <div class="line2"></div>
         </div>
-        <div id="source">
-            <h3 style="margin-left: 30%;">API SOURCE</h3>
-            <div id="rect3">
-                <p>The below links are the API links used for the created charts.</p>
-                <a>http://api.worldbank.org/v2/country/ke/indicator/NY.GDP.MKTP.CD?date=2000:2021&format=json</a>
-                <a>http://api.worldbank.org/v2/country/rw/indicator/NY.GDP.MKTP.CD?date=2000:2021&format=json</a>
-                <a>http://api.worldbank.org/v2/country/ng/indicator/NY.GDP.MKTP.CD?date=2000:2021&format=json</a>
-                <a>http://api.worldbank.org/v2/country/zw/indicator/NY.GDP.MKTP.CD?date=2000:2021&format=json</a>
-            </div>
-        </div>
-
+       
     </section>
     
     <!-- End of  body -->
