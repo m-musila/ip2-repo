@@ -91,3 +91,11 @@ h5, .text {
         font-size: 0.6rem;
     }
 }
+
+/* ***************************** mobile-view styles ***************************** */
+@media screen and (max-width: 500px) {
+    .logo {
+        width:40%;
+        height: auto;
+    }
+}
