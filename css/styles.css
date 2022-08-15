@@ -192,6 +192,12 @@ div > hr {
 
 }
 
+@media screen and (max-width: 500px) {
+    .logo {
+        width:40%;
+        height: auto;
+    }
+}
 
 
 

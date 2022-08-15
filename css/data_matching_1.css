@@ -215,6 +215,11 @@ h2 {
 
 /* ***************************** mobile-view styles ***************************** */
 @media screen and (max-width: 500px) {
+    .logo {
+        width:40%;
+        height: auto;
+    }
+    
     #left {
         margin-left: 5%;
     }

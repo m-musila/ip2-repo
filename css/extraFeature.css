@@ -57,3 +57,11 @@
     gap: 1rem;
     align-items: center;
   }
+
+  /* ***************************** mobile-view styles ***************************** */
+@media screen and (max-width: 500px) {
+    .logo {
+        width:40%;
+        height: auto;
+    }
+}
