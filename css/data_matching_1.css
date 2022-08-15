@@ -105,7 +105,7 @@ h2 {
 
  .footer {
     position: absolute;
-    bottom: -180%;
+    bottom: -300%;
     width: 100%;
     margin-top: auto;
     background-color:black;
@@ -208,7 +208,7 @@ h2 {
 
     .footer {
         position: absolute;
-        bottom: -210%;
+        bottom: -350%;
     }
     
 }
@@ -252,6 +252,6 @@ h2 {
 
     .footer {
         position: absolute;
-        bottom: -260%;
+        bottom: -400%;
     }
 }
